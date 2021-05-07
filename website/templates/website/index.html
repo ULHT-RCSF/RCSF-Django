@@ -1,0 +1,21 @@
+{% extends 'website/layout.html' %}
+
+{% block main %}
+    <div class="col-md-8">
+        <h2>Introdução</h2>
+        <p>Este Website congrega vários conteúdos estudados na Unidade Curricular de Redes de Comunicação sem Fios.</p>
+        <ul>
+            <li>
+                Descreve as características dos principais sistemas celulares.
+            </li>
+            <li>
+                Implementa vários aspectos relacionados com o planeamento destas redes em termos de cobertura e tráfego
+            </li>
+        </ul>
+
+    </div>
+    <div class="col-md-4">
+        {% load static %}
+        <img src=" {% static 'website/images/prx.png' %}" alt="">
+    </div>
+{% endblock main %}

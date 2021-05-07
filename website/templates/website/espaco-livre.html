@@ -1,0 +1,23 @@
+{% extends 'website/layout.html' %}
+
+{% block main %}
+    <div class="col-md-6">
+        <h2>Propagação em Espaço Livre</h2>
+
+        <form action=" {% url 'website:espaco_livre' %} " method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit">
+        </form>
+
+    </div>
+    <div class="col-md-6">
+
+        {% if submetido %}
+            {% load static %}
+            <img src=" {% static "website/images/free-space.jpg" %}" alt="" width="100%">
+        {% endif %}
+
+    </div>
+{% endblock main %}

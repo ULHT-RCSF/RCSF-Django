@@ -1,0 +1,15 @@
+{% extends 'website/layout.html' %}
+
+
+{% block main %}
+    <div class="col-md-8">
+        <h2>Sobre este website</h2>
+        <p>Este Website congrega vários conteúdos desenvolvidos pelos alunos da Unidade Curricular de Redes de Comunicação sem Fios, da Licenciatura em Engenharia Informática, Redes e Telecomunicações.</p>
+        <p>Doncente responsável: Lúcio Studer Ferreira</p>
+    </div>
+    <div class="col-md-4">
+        {% load static %}
+        <img src=" {% static 'website/images/prx.png' %}" alt="">
+    </div>
+{% endblock main %}
+      
